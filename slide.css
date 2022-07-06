@@ -1,0 +1,220 @@
+
+.slide{
+    width: 100%;
+    position: relative;
+                
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+
+.slide .slick-list{  
+/* 배너들의 상위요소 */
+    overflow:hidden;  
+}
+
+.slide .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.slide .slick-slide{
+/* 개별 배너 */
+margin:0; 
+width:100%;
+float:left;
+}
+
+.slide .slick-slide  img{width:100%;}
+    
+/* next prev */           
+.slide .slick-prev{
+    position: absolute;
+    left:0; top:50%;
+    z-index: 2;
+}
+
+.slide .slick-next{
+    position: absolute;
+    right:0; top:50%;
+    z-index: 2;
+}
+    
+/* dots */
+    .slide .slick-dots{
+    position: absolute;
+    left:5%; bottom:10%;
+    width:100%;
+    text-align:start;
+
+    list-style-type: none;
+    padding:0;
+}
+
+.slide .slick-dots li{display: inline-block;}
+.slide .slick-dots li button{
+    padding: 0;
+    background-color: transparent;
+    border-radius: 100%;
+    /* display: inline-block; */
+    font-size:0;
+    margin:0 10px;
+    width: 8px; height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.slide .slick-dots li.slick-active button{
+    width:15px; height:15px;
+    border: 2px solid #fff;
+}
+
+/*********slide-product*********/
+
+.slide-product{
+    width: 100%;
+    position: relative;
+                
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+
+.slide-product .slick-list{  
+/* 배너들의 상위요소 */
+    /* overflow:hidden;   */
+}
+
+.slide-product .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.slide-product .slick-slide{
+/* 개별 배너 */
+margin:0; 
+width:100%;
+float:left;
+}
+
+.slide-product .slick-slide  img{width:100%;}
+    
+/* next prev */           
+.slide-product .slick-prev{
+    position: absolute;
+    left:5%; bottom:-40%;
+    font-size: 0;
+    width: 80px; height: 10px;
+    z-index: 2;
+    background-image: url("./img/more_btn_i2.png");
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.slide-product .slick-next{
+    position: absolute;
+    right:0; top:50%;
+    z-index: -1;
+    border: none;
+    font-size: 0;
+    color: transparent;
+}
+    
+/* dots */
+.slide-product .slick-dots{
+    position: absolute;
+    left:45%; bottom:-40%;
+    width:100%;
+    text-align:start;
+    
+    z-index: 999;
+    list-style-type: none;
+    padding:0;
+}
+
+.slide-product .slick-dots li{display: inline-block;}
+.slide-product .slick-dots li button{
+    padding: 0;
+    background-color: transparent;
+    border-radius: 100%;
+    /* display: inline-block; */
+    font-size:0;
+    margin:0 10px;
+    width: 8px; height: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.slide-product .slick-dots li.slick-active button{
+    width:15px; height:15px;
+    border: 2px solid #0B3774;
+}
+
+
+/*********.main4-silde*********/
+
+.main4-silde{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+                
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+
+.main4-silde .slick-list{  
+/* 배너들의 상위요소 */
+    /* overflow:hidden;   */
+}
+
+.main4-silde .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.main4-silde .slick-slide{
+/* 개별 배너 */
+margin:0; 
+width:100%;
+float:left;
+}
+
+.main4-silde .slick-slide  img{width:100%;}
+    
+/* next prev */           
+.main4-silde .slick-prev{
+    position: absolute;
+    left:0; top:50%;
+    z-index: 2;
+}
+
+.main4-silde .slick-next{
+    position: absolute;
+    right:0; top:50%;
+    z-index: 2;
+}
+    
+/* dots */
+.main4-silde .slick-dots{
+    position: absolute;
+    left:70%; bottom:-30%;
+    width:100%;
+    text-align:start;
+
+    list-style-type: none;
+    padding:0;
+}
+
+.main4-silde .slick-dots li{display: inline-block;}
+.main4-silde .slick-dots li button{
+    padding: 0;
+    background-color: transparent;
+    border-radius: 100%;
+    /* display: inline-block; */
+    font-size:0;
+    margin:0 10px;
+    width: 8px; height: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.main4-silde .slick-dots li.slick-active button{
+    width:15px; height:15px;
+    border: 2px solid #7C7A7C;
+}
