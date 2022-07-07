@@ -130,8 +130,11 @@ function init(){
     });
 };
 
-// $('.btn').click(function(){
-//     $('html').scrollTop(0);
-// },200)
+/*TOP버튼*/
+$('.btn').on('click',function(){
+    $('html').animate({scrollTop:0},750);
+});
 
-$(window).on('load',init);
+
+$(function(){init() })
+// $(window).on('load',init);

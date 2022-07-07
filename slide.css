@@ -153,7 +153,7 @@ float:left;
 .main4-silde{
     width: 100%;
     position: relative;
-    z-index: -1;
+
                 
     /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
 }
@@ -161,12 +161,14 @@ float:left;
 .main4-silde .slick-list{  
 /* 배너들의 상위요소 */
     /* overflow:hidden;   */
+    
 }
 
 .main4-silde .slick-track::after{
     content:'';
     display:block;
     clear: both;
+    
 }
 
 .main4-silde .slick-slide{
@@ -174,9 +176,10 @@ float:left;
 margin:0; 
 width:100%;
 float:left;
+
 }
 
-.main4-silde .slick-slide  img{width:100%;}
+.main4-silde .slick-slide  img{width:100%; }
     
 /* next prev */           
 .main4-silde .slick-prev{
@@ -194,7 +197,8 @@ float:left;
 /* dots */
 .main4-silde .slick-dots{
     position: absolute;
-    left:70%; bottom:-30%;
+    left:70%; bottom:-10%;
+    transform: translateY(50%);
     width:100%;
     text-align:start;
 
