@@ -1,5 +1,7 @@
 @import "common";
 @import url("slide.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@300;400&display=swap');
 
 @media (max-width:768px ){
     /******header******/
@@ -12,7 +14,7 @@
 
         display: flex;
         align-items: center;
-        animation: hd 2.5s forwards;
+        animation: hd 3s forwards;
         opacity: 1;
         @keyframes hd{
             0%{
@@ -63,6 +65,7 @@
         align-items: center;
         background-color: rgb(255, 255, 255);
         box-shadow: 5px 5px 5px rgba(74, 74, 74, 0.1);
+        z-index: 1003;
         .wrapper{
             display:block;
             width:25px;
@@ -98,13 +101,16 @@
     .burger{
         position: absolute;
         top:0;
-        z-index: 1;
+        z-index: 1000;
         width: 100%; height: 100vh;
         background-color: #fff;
         display: none;
-        // transition: 3s;
-        // animation: reverse;
-        overflow: hidden;
+        animation: b 0.5s forwards;
+        font-family: 'Maven Pro', sans-serif;
+        @keyframes b{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
         .burger-header{
             justify-content: space-between;
             width: 100%; height: 65px;
@@ -163,6 +169,7 @@
                 li{
                     h3{
                         color: #5a5657;
+                        font-size: 22px;
                         }
                     .active3{
                         color: #E9463F;
@@ -237,7 +244,15 @@
                 position: relative;
                 margin: 0 auto;
                 overflow: hidden;
-                
+                animation: main 1s forwards;
+                @keyframes main{
+                    0%{
+                        transform: scale(0.8);
+                    }
+                    100%{
+                        transform: scale(1);
+                    }
+                }
                 .slide{
                     figure{
                         img{
@@ -251,7 +266,7 @@
                     transform: translateY(100%);
                     opacity: 0;
                     color: #fff;             
-                    animation: p 1.5s  forwards;   
+                    animation: p 2.5s  forwards;   
                     @keyframes p{
                         0%{
                             transform: translateY(15%);
@@ -265,6 +280,7 @@
                     h2{
                         font-size: 30px;
                         line-height: 33px;
+                                            font-family: 'Maven Pro', sans-serif;
                     }
                     h2::after{
                         content: '';
@@ -308,6 +324,7 @@
                         transform: translate(0%,100%);
                         color: #5A5657;
                         font-size: 25px;
+                        font-family: 'Maven Pro', sans-serif;
                     }
                     .photo{
                         &.active{
@@ -329,8 +346,8 @@
                             font-size: 14px;
                         }
                         img{
-                            width: 20px;
-                            opacity: 0.9;
+                            // width: 20px;
+                            opacity: 0.5;
                             position: absolute;
                             left: 58%;  top:-33px;
                         }
@@ -344,6 +361,12 @@
                                 display: block;
                                 text-align: center;
                                 padding: 0; margin: 0;
+
+                                background-image: url(./img/more_btn_i.png);
+                                background-size: 8px;
+                                background-repeat: no-repeat;
+                                background-position: 198px 230px;
+
                                 ul{
                                     padding-top: 50px;
                                     display: flex;
@@ -357,16 +380,19 @@
                                         align-items: center;
                                         justify-content: space-around;
                                         color: #E9463F;
-                                        font-weight: 900;
+                                        font-weight: 700;
                                         font-size: 16px;
+                                        font-family: 'Maven Pro', sans-serif;
                                         }
                                     }
                                 .more{
-                                    margin-top: 60px;
+                                    height: 80%; margin-top: 70px;
                                     transform: rotate(90deg);
                                     font-size: 18px;
-                                    font-weight: 900;
+                                    font-weight: 700;
                                     color: #5C595A;
+                                    transition: 0.3s;
+                                    font-family: 'Maven Pro', sans-serif;
                                     }
                                     .txt{
                                         margin: 50px 0 0;
@@ -393,6 +419,7 @@
                     h1{
                         color: #5A5657;
                         font-size: 25px;
+                        font-family: 'Maven Pro', sans-serif;
                     }
                     p{
                         line-height: 25px;
@@ -535,6 +562,7 @@
                             color: #5A5657;
                             font-size: 25px;
                             margin: 0;
+                            font-family: 'Maven Pro', sans-serif;
                         }
                         a{
                             width: 65px; height: 65px;
@@ -560,19 +588,22 @@
                     padding: 0 15px;
                     position: relative;
                     top:20px;
+                    z-index: 1000;
                     li{
                         color: #0B3774;
                         line-height: 1;
                         margin-bottom: 50px;
                         p{
                             font-size: 20px;
-                            font-weight: 600; 
+                            font-weight: 500; 
                             margin: 0;
+                            font-family: 'Maven Pro', sans-serif;
                         }
                         h3{
                             font-size: 80px;
                             margin: 0;
-                            font-weight: 200; 
+                            font-weight: 400; 
+                            font-family: 'Maven Pro', sans-serif;
                         }
                     }
                     li:nth-of-type(2){
@@ -605,6 +636,7 @@
                         h1{
                             color: #fff;
                             font-size: 25px;
+                            font-family: 'Maven Pro', sans-serif;
                         }
                     }
                     .scroll-txt{
@@ -626,12 +658,23 @@
                             h4{
                                 font-size: 13px;
                                 font-weight: 100;
+                                // margin: 20px 0 10px 0;
                                 margin: 20px 0 10px 0;
+                                width: 63px;
+                            }
+                            h4::after{
+                                content: '';
+                                display: block; 
+                                transform: translateX(75px) translateY(-8px);
+                                width: 100%;
+                                border: 1px solid rgba(90, 86, 87, 0.1);
+                                font-weight: 100;
                             }
                             h3{
                                 font-size: 15px;
                                 color: rgba(255,255,255,0.5);
                                 margin: 0;
+                                font-family: 'Maven Pro', sans-serif;
                             }
                             h2{
                                 font-size: 30px;
@@ -655,6 +698,7 @@
                     text-align: center;
                     color: #fff;
                     padding: 20px 0;
+                    font-family: 'Maven Pro', sans-serif;
                 }
                 .content{
                     width:100%; 
@@ -680,6 +724,7 @@
                                 text-align: center; 
                                 font-weight: 600; font-size: 20px;
                                 margin: 0;
+                                font-family: 'Maven Pro', sans-serif;
                             }
                             p{
                                 margin: 10px 0; font-size: 13px;
@@ -721,6 +766,7 @@
             .top{
                 h3{
                     margin: 0;
+                    font-size: 10px;
                 }
                 .cs{
                     display: flex;
@@ -743,6 +789,8 @@
                             font-size: 6px;
                             line-height: 15px;
                             letter-spacing: 0.8px;
+                            opacity: 0.3;
+                            font-weight: 200;
                         }
                     }
                 }
@@ -783,6 +831,7 @@
                     color: #999;
                     line-height: 18px;
                     padding: 0 10px;
+                    opacity: 0.3;
                 }
                 .address{
                     line-height: 18px;
@@ -797,7 +846,6 @@
             }
         }
     }
-
 
 
     /*******스크롤바******/
