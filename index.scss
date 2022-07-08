@@ -10,7 +10,7 @@
         justify-content: space-between;
         width: 100%; height: 65px;
         top: 0;  left: 0;
-        z-index: 1;
+        z-index: 2000;
 
         display: flex;
         align-items: center;
@@ -59,7 +59,7 @@
         justify-content: space-between;
         width: 100%; height: 65px;
         top: 0;  left: 0;
-        z-index: 999;
+        z-index: 2000;
 
         display: flex;
         align-items: center;
@@ -588,7 +588,7 @@
                     padding: 0 15px;
                     position: relative;
                     top:20px;
-                    z-index: 1000;
+                    z-index: 1001;
                     li{
                         color: #0B3774;
                         line-height: 1;

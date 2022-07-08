@@ -81,7 +81,7 @@ function init(){
     $(window).on('scroll',function(){
         screenTop = $(window).scrollTop();
 
-        if($('.main-4 h3').eq(0).offset().top - $(window).height() +80 <=   screenTop){ 
+        if($('.main-4 h3').eq(0).offset().top - $(window).height() +80 <   screenTop){ 
             if(a){ 
                 count1(); a = false;
             }
@@ -114,64 +114,64 @@ function init(){
         }
     });
 
-function count1(){
-    let count=0;
+    function count1(){
+        let count=0;
 
-    let countInterval = setInterval(function(){
-        if(count<90000){
-            count+=300;
-            $('.main-4 ul li:nth-of-type(1) h3').text(count);
-        }else{
-            clearInterval(countInterval);
-        }
-    },5)
-}
+        let countInterval = setInterval(function(){
+            if(count<90000){
+                count+=300;
+                $('.main-4 ul li:nth-of-type(1) h3').text(count);
+            }else{
+                clearInterval(countInterval);
+            }
+        },5)
+    }
 
-function count2(){
-    let count1=0;
+    function count2(){
+        let count1=0;
 
-    let countInterval2 =setInterval(function(){
-        if(count1<204){
-            count1++;
-            $('.main-4 ul li:nth-of-type(2) h3').text(count1);
-        }else{
-            clearInterval(countInterval2);
-        }
-    },10)
+        let countInterval2 =setInterval(function(){
+            if(count1<204){
+                count1++;
+                $('.main-4 ul li:nth-of-type(2) h3').text(count1);
+            }else{
+                clearInterval(countInterval2);
+            }
+        },10)
 
-}
+    }
 
-function count3(){
-    let count2=0;
+    function count3(){
+        let count2=0;
 
-    let countInterval3 = setInterval(function(){
-        if(count2<81){
-            count2++;
-            $('.main-4 ul li:nth-of-type(3) h3').text(count2);
-        }else{
-            clearInterval(countInterval3);
-        }
-    },20)
+        let countInterval3 = setInterval(function(){
+            if(count2<81){
+                count2++;
+                $('.main-4 ul li:nth-of-type(3) h3').text(count2);
+            }else{
+                clearInterval(countInterval3);
+            }
+        },20)
 
-}
+    }
 
-function count4(){
-    let count3=0;
+    function count4(){
+        let count3=0;
 
-    let countInterval4 = setInterval(function(){
-        if(count3<12){
-            count3++;
-            $('.main-4 ul li:nth-of-type(4) h3').text(count3);
-        }else{
-            clearInterval(countInterval4);
-        }
-    },150)
+        let countInterval4 = setInterval(function(){
+            if(count3<12){
+                count3++;
+                $('.main-4 ul li:nth-of-type(4) h3').text(count3);
+            }else{
+                clearInterval(countInterval4);
+            }
+        },150)
 
-}
+    }
 
 
-    /*메인4 슬라이드*/
-    $(".main4-silde").slick({
+/*메인4 슬라이드*/
+$(".main4-silde").slick({
         fade: true,
         arrows : false,
         dots: true,
@@ -181,8 +181,8 @@ function count4(){
         autoplaySpeed: 5000,
     });
 
-    /*footer*/
-    $('.on').click(function(){
+/*footer*/
+$('.on').click(function(){
         $(".area").slideToggle(500)
         if($('.on p').text() == '사업자정보 열기'){
             $('.on p').text('사업자정보 닫기');
@@ -191,7 +191,7 @@ function count4(){
             $('.on p').text('사업자정보 열기');
             $('.on span').css('transform','rotate(180deg)');
         }
-    });
+});
 };
 
 /*TOP버튼*/

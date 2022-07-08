@@ -46,7 +46,7 @@ a {
     height: 65px;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,7 +114,7 @@ a {
     height: 65px;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 2000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -780,7 +780,7 @@ a {
     padding: 0 15px;
     position: relative;
     top: 20px;
-    z-index: 1000;
+    z-index: 1001;
   }
   main .main-4 ul li {
     color: #0B3774;
